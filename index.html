@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,14 +32,37 @@
         main{
             background-color: lightblue;
             display: flex;
+            justify-content: center;
+            flex-direction: column;
         }
         .contato-main {
             display: flex;
             justify-content: center;
             flex-direction: column;
+            align-items: center;
         }
+        .bloco {
+            background-color: lightgreen;
+            width: 200px;
+            height: 300px;
 
-
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        
+}
+        footer > div{
+            display: flex;
+            justify-content: center;
+  
+        }
+        img {
+            width: 900px;
+            display: flex;
+            justify-content: center;
+            
+        }
 
     </style>
 </head>
@@ -55,8 +78,7 @@
         </nav> 
            
     </div>
-    <div
-     class="contato-grande">
+    <div class="contato-grande">
         <h2>Contact Us</h2>
             <a href="">Home /</a>
             <a href="">Pages /</a>
@@ -70,7 +92,49 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repellendus consequuntur </p>
         </section>
 
-        <section></section>
+        <section class="bloco">
+            <p><Strong>Call Us</Strong></p>
+            <p>+012 345 6789</p>
+
+            <p><strong>Email Us</strong></p>
+            <p>Info@example.com</p>
+
+            <p><strong>Office Adress</strong></p>
+            <p>123 stree, New York, USA</p>
+            <div class="bloco-2">
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam rem ea, natus inventore fugit molestiae non doloremque ipsum iure officiis repellendus amet distinctio ex deleniti soluta laborum fugiat sunt quaerat!</p> -->
+
+            </div>
+        </section>
+
+        <img src="/img/Captura de tela 2024-06-26 092726.png" alt="">
+
+   
+
     </main>
+    <footer>
+        <div>
+                <div>
+                    <p>Foody</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div>  
+                <p><Strong>Address</Strong></p>
+                <p>+012 345 6789</p>
+                <p>info@example.com</p>
+                </div> 
+                <div>      
+            <p><strong>Quick links</strong></p>
+            <a href="">about us</a>
+            <a href="">home</a>
+            <a href="">contact us</a>
+            <a href="">Support</a>
+            <a href="">Terms & Condition</a>
+                </div>
+
+        </div>
+
+
+    </footer>
 </body>
 </html>
