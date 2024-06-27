@@ -4,135 +4,187 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <style>
         body {
-            background-color: lightgrey;
-            margin: 0;
-            padding: 0;
+            color: grey;
+            /* max-width: 1200px; */
+            margin: 0 auto;
         }
-        .header {
-            margin: 0;
+        header {
+            background-color: lightgray;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 300px;
+        }
+        #title-1 {
+            flex-direction: flex;
+            margin: 0 auto;
+        }
+        #title-2{
+            display: inline-block;
+            flex-direction: row;
+            
+
+        }
+        li {
+            display: inline-block;
+            margin: 20px;
+        }
+        main {
+            display: flex;
+            flex-direction: row;
+        }
+        h1{
+            font-size: 50px;
+
+        }
+        main{
             background-color: white;
             display: flex;
+            justify-content: center;
+        }
+        .contato-da-main {
+            display: block;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: auto;
+            padding: auto;
+        }
+        aside{
+            border: 2px solid black;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .verde {
+            background-color: rgb(70, 247, 70);
+        }
+        footer{
+            background-color: black;
+            margin-top: 0;
+            min-width: auto;
+            max-width: auto;
+            
+          
+
+        }
+        footer > div {
+            display: flex;
+            flex-direction: column;
             justify-content: space-between;
             align-items: center;
             
-        
-        }
-        .header > a {
-            border: 1px solid black;
             
-        }
-        .contato-grande {
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-        }
 
-        main{
-            background-color: lightblue;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-        }
-        .contato-main {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-        }
-        .bloco {
-            background-color: greenyellow;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            
-        
-}
-        footer > div{
-            display: flex;
-            justify-content: center;
-  
-        }
-        img {
-            width: 900px;
-            display: flex;
-            justify-content: center;
-            
+
         }
 
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Foody</h1>
-        <nav>
-            <a href="">Home</a>
-            <a href="">About Us</a>
-            <a href="">Products</a>
-            <a href="">Pages</a>
-            <a href="">Contact Us</a>
-        </nav> 
-           
-    </div>
-    <div class="contato-grande">
-        <h2>Contact Us</h2>
-            <a href="">Home /</a>
-            <a href="">Pages /</a>
-            <a href="">Contact Us</a>
 
+    <header>
 
+    <div id="title-1">
+        <h1 style="color: black;"><Strong>Foody</Strong></h1>
     </div>
+    <div id="title-2">
+        <h1>Contact Us</h1>
+        <a href="#">Home</a>
+        <a href="#">Pages</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Pages</a></li>
+    </ul>
+
+    
+
+    </header>
+
     <main>
-        <section class="contato-main">
-            <h3>Contact Us</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repellendus consequuntur </p>
-        </section>
+       
 
-        <section class="bloco">
-            <p><Strong>Call Us</Strong></p>
-            <p>+012 345 6789</p>
-
-            <p><strong>Email Us</strong></p>
-            <p>Info@example.com</p>
-
-            <p><strong>Office Adress</strong></p>
-            <p>123 stree, New York, USA</p>
-            <div class="bloco-2">
-                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam rem ea, natus inventore fugit molestiae non doloremque ipsum iure officiis repellendus amet distinctio ex deleniti soluta laborum fugiat sunt quaerat!</p> -->
-
+        
+        <aside class="verde">
+            <div>
+                <p>Call us</p>
+                <p>+012 345 67890</p>
             </div>
-        </section>
+            <div>
+                <p>Email Us</p>
+                <p>info@example.com</p>
+            </div>
+            <div>
+                <p>Office Address</p>
+                <p>123, street, Nova York, USA</p>
+            </div>
+            <div>
+                <p>Follow Us</p>
+            </div>        
+        </aside>
+        <div class="contato-da-main">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <aside>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, natus.</p>
 
-        <img src="/img/Captura de tela 2024-06-26 092726.png" alt="">
-
-   
+            <form action="">
+                <input type="text" placeholder="Yourname">
+                <br>
+                <input type="text" placeholder="Email">
+                <br>
+                <input type="text" placeholder="Subject">
+                <br>
+                <input type="text" placeholder="Mensage">
+                <br>
+                <input type="button" value="Send mensage">
+            </form>
+        </aside>
 
     </main>
+
     <footer>
         <div>
-                <div>
-                    <p>Foody</p>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                </div>
-                <div>  
-                <p><Strong>Address</Strong></p>
-                <p>+012 345 6789</p>
-                <p>info@example.com</p>
-                </div> 
-                <div>      
-            <p><strong>Quick links</strong></p>
-            <a href="">about us</a>
-            <a href="">home</a>
-            <a href="">contact us</a>
-            <a href="">Support</a>
-            <a href="">Terms & Condition</a>
-                </div>
-
+        <h1>Foody</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, commodi!</p>
+        </div>
+        <div>
+        <h3>Adress</h3>
+        <p>123, street, Nova York, USA</p>
+        <p>+012 345 67890</p>
+        <p>info@example.com</p>
+        </div>
+        <div>
+        <h3>Quick Links</h3>
+        <p>About us</p>
+        <p>Contact Us</p>
+        <p>Our Services</p>
+        <p>Terms & Condition</p>
+        <p>Support</p>
+        </div>
+        
+        <h3>Newsletter</h3>
+        <p>Lorem ipsum dolor sit.</p>
+        <div class="formss">
+            <form action="">
+                <input type="text" placeholder="Your email">
+            </form>
         </div>
 
-
+        
     </footer>
+    
 </body>
 </html>
